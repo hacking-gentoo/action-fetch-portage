@@ -12,8 +12,9 @@ function die()
 # 1: portage_file
 function download_portage_snapshot()
 {
-    git clone --depth=1 --branch=master git@github.com:gentoo/gentoo.git portage || die "Unable to clone portage repository"
+    git clone --depth=1 --branch=master https://github.com/gentoo/gentoo.git portage || die "Unable to clone portage repository"
     rm -rf ./portage/.git
 }
 
+cd "${GITHUB_WORKSPACE}"
 download_portage_snapshot
