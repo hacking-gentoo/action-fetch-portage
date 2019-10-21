@@ -1,0 +1,5 @@
+name: 'Play'
+description: 'An action playground'
+runs:
+  using: 'node12'
+  main: 'index.js'
