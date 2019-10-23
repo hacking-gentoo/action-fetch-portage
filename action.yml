@@ -1,5 +1,8 @@
-name: 'Play'
-description: 'An action playground'
+name: 'action-fetch-portage'
+description: 'Fetch the most recent Gentoo Linux portage tree'
 runs:
   using: 'node12'
   main: 'index.js'
+branding:
+  icon: 'download'
+  color: 'purple'
